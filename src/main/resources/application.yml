@@ -1,0 +1,13 @@
+spring:
+  # 数据库连接信息
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/garage?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root #需要改成自己的数据库用户名
+    password: 123456 #需要改成自己的数据库密码
+server:
+  port: 8099 # 服务端口,后面改成自己的端口号,如果没有冲突可以直接使用8099，其他就不需要改了
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名自动转换
